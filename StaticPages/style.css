@@ -1,0 +1,14 @@
+:root {
+  --poppins: "Poppins", sans-serif;
+  --satisfy: "Satisfy", cursive, sans-serif;
+}
+* {
+  font-family: var(--poppins);
+}
+nav a.logo {
+  font-family: var(--satisfy);
+  font-size: 2rem;
+}
+.degrees {
+  font-size: 5rem;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>headerLinks}}
+    <title>Weather Reports</title>
+  </head>
+  <body>
+    {{>nav}}
+    <div class="container border my-5 p-5 rounded text-center">
+    <form class="d-flex my-5" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        name="search city"
+        id="searchBar"
+        placeholder="Search City"
+        autocomplete="on"
+        autocapitalize="on"
+        spellcheck="true"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-primary" type="submit"  id="searchBtn"><i
+          class="bi bi-search"
+        ></i></button>
+    </form>
+        <h1 class="text-body degrees"><span id="temp" class="text-primary">00.00</span>&deg;C</h1>
+        <h1 class="text-body">@<span id="city">location</span></h1>
+    </div>
+    {{>scripts}}
+  </body>
+</html>
